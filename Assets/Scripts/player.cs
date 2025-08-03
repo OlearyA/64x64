@@ -8,7 +8,7 @@ using UnityEngine.PlayerLoop;
 public class Player : MonoBehaviour
 {
     [SerializeField]
-    private float moveSpeed,jumpSpeed,coyoteTimer;
+    private float moveSpeed,airMoveSpeed,jumpSpeed,coyoteTimer;
     
     private Vector2 _movement;
     private Rigidbody2D _rigidbody;
@@ -28,7 +28,9 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rigidbody.linearVelocity = new Vector2( _movement.x * moveSpeed,_rigidbody.linearVelocity.y);
+          if(_grounded)  
+              _rigidbody.AddForce( new Vector2( _movement.x * moveSpeed,_rigidbody.linearVelocity.y));
+           else _rigidbody.AddForce( new Vector2((_movement.x * airMoveSpeed)+_rigidbody.linearVelocity.x,_rigidbody.linearVelocity.y));
     }
     
     public void UpdateMovement(InputAction.CallbackContext content)
