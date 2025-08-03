@@ -1,19 +1,56 @@
+using System;
+using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.PlayerLoop;
 
-namespace Scrips
+public class Player : MonoBehaviour
 {
-    public class player : MonoBehaviour
+    [SerializeField]
+    private float moveSpeed,jumpSpeed,coyoteTimer;
+    
+    private Vector2 _movement;
+    private Rigidbody2D _rigidbody;
+    
+    private bool _grounded;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
-            
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            transform.Translate(transform.right * Time.deltaTime);
-        }
+        _rigidbody=GetComponent<Rigidbody2D>();
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    private void FixedUpdate()
+    {
+        _rigidbody.linearVelocity = new Vector2( _movement.x * moveSpeed,_rigidbody.linearVelocity.y);
+    }
+    
+    public void UpdateMovement(InputAction.CallbackContext content)
+    {
+        _movement = content.ReadValue<Vector2>();
+    }
+
+    public void Jump(InputAction.CallbackContext content)
+    {
+        if (!_grounded)
+        {
+            _rigidbody.AddForce(Vector2.up *(.25f*jumpSpeed));
+            return;
+        }
+        _rigidbody.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+        _grounded = false;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Ground"))
+            _grounded=true;
+    }
+    
 }
