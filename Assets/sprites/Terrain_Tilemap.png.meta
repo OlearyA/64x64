@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: f52aa118ac3eaec4bb8c01892de087a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4573875250704391915
+    second: Terrain_Tilemap_0
+  - first:
+      213: -4572940163521493724
+    second: Terrain_Tilemap_1
+  - first:
+      213: -7801087399901611385
+    second: Terrain_Tilemap_2
+  - first:
+      213: -2521959725039860925
+    second: Terrain_Tilemap_3
+  - first:
+      213: 8184117225710295170
+    second: Terrain_Tilemap_4
+  - first:
+      213: -4718991236669446116
+    second: Terrain_Tilemap_5
+  - first:
+      213: -2047477933826562724
+    second: Terrain_Tilemap_6
+  - first:
+      213: -5182631849812363529
+    second: Terrain_Tilemap_7
+  - first:
+      213: -7477188237315279896
+    second: Terrain_Tilemap_8
+  - first:
+      213: -6986598577968835718
+    second: Terrain_Tilemap_9
+  - first:
+      213: 8093067848365527612
+    second: Terrain_Tilemap_10
+  - first:
+      213: 4294002903178985582
+    second: Terrain_Tilemap_11
+  - first:
+      213: 1135635532636063054
+    second: Terrain_Tilemap_12
+  - first:
+      213: 3493521487516340903
+    second: Terrain_Tilemap_13
+  - first:
+      213: 4398288384447214435
+    second: Terrain_Tilemap_14
+  - first:
+      213: -7394405626372886548
+    second: Terrain_Tilemap_15
+  - first:
+      213: 909921099110582218
+    second: Terrain_Tilemap_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terrain_Tilemap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 409
+        width: 161
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee9f2d9e4ba97f30800000000000000
+      internalID: 4573875250704391915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 319
+        width: 32
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4254f265627a980c0800000000000000
+      internalID: -4572940163521493724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 161
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ab61b7758fcb390800000000000000
+      internalID: -7801087399901611385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_3
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 319
+        width: 42
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3434823fdf2300dd0800000000000000
+      internalID: -2521959725039860925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 319
+        width: 42
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2881e966143d39170800000000000000
+      internalID: 8184117225710295170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 319
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18e228f876c28eb0800000000000000
+      internalID: -4718991236669446116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_6
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 319
+        width: 32
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5521dccaa5e593e0800000000000000
+      internalID: -2047477933826562724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_7
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 319
+        width: 42
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6fe469ac79318b0800000000000000
+      internalID: -5182631849812363529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 219
+        width: 161
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3f71cf9e0bb3890800000000000000
+      internalID: -7477188237315279896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 269
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a731be32c9d9a0f90800000000000000
+      internalID: -6986598577968835718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_10
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 269
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3256f4445a505070800000000000000
+      internalID: 8093067848365527612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_11
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 219
+        width: 92
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60ca7cc3ec579b30800000000000000
+      internalID: 4294002903178985582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_12
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 219
+        width: 92
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e458515008692cf00800000000000000
+      internalID: 1135635532636063054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_13
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 159
+        width: 72
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a21b9e884b7b7030800000000000000
+      internalID: 3493521487516340903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_14
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 159
+        width: 72
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 363f3b68bfbd90d30800000000000000
+      internalID: 4398288384447214435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_15
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 39
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefe4e2924bc16990800000000000000
+      internalID: -7394405626372886548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_Tilemap_16
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 19
+        width: 232
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac78e1e2b60b0ac00800000000000000
+      internalID: 909921099110582218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Terrain_Tilemap_0: 4573875250704391915
+      Terrain_Tilemap_1: -4572940163521493724
+      Terrain_Tilemap_10: 8093067848365527612
+      Terrain_Tilemap_11: 4294002903178985582
+      Terrain_Tilemap_12: 1135635532636063054
+      Terrain_Tilemap_13: 3493521487516340903
+      Terrain_Tilemap_14: 4398288384447214435
+      Terrain_Tilemap_15: -7394405626372886548
+      Terrain_Tilemap_16: 909921099110582218
+      Terrain_Tilemap_2: -7801087399901611385
+      Terrain_Tilemap_3: -2521959725039860925
+      Terrain_Tilemap_4: 8184117225710295170
+      Terrain_Tilemap_5: -4718991236669446116
+      Terrain_Tilemap_6: -2047477933826562724
+      Terrain_Tilemap_7: -5182631849812363529
+      Terrain_Tilemap_8: -7477188237315279896
+      Terrain_Tilemap_9: -6986598577968835718
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
