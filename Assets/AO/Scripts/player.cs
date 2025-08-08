@@ -9,39 +9,37 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
-    public bool Alive;
     public GameObject[] DeadPlayers;
     [SerializeField]
-    private float groundedMoveSpeed,airMoveSpeed,groundedVelocityCap,airVelocityCap,intiJumpSpeed,jumpSpeed,coyoteTimer,jumpDuration;
+    private float groundedMoveSpeed,airMoveSpeed,groundedVelocityCap,airVelocityCap,intiJumpSpeed,jumpSpeed,coyoteTimer,jumpDuration,respawnTimer;
     [SerializeField]
     private Vector2 spawnPoint;
     [SerializeField]//temp
-    private bool _coyote,_jumping;
+    private bool _coyote,_jumping,_alive=true;
     private Vector2 _movement;
     private Rigidbody2D _rigidbody;
+    private BoxCollider2D _boxCollider2d;
+    private SpriteRenderer _spriteRenderer;
     [SerializeField]
     private bool _grounded;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rigidbody=GetComponent<Rigidbody2D>();
+        _boxCollider2d = GetComponent<BoxCollider2D>();
+        spawnPoint=transform.position;
+        _spriteRenderer=GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!Alive)
-        {
-            _rigidbody.freezeRotation = true;
-            _rigidbody.linearVelocity = Vector2.zero;
-            Vector3 t = transform.position;
-            //t.x/.4f
-            Instantiate(DeadPlayers[0], transform.position, Quaternion.identity);
-        }
+        
     }
 
     private void FixedUpdate()
     {
+        if(!_alive)return;
         if (_grounded)
         {
             _rigidbody.AddForce(new Vector2(_movement.x * groundedMoveSpeed, 0));
@@ -113,6 +111,28 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         _jumping = false;
+    }
+
+    public void Death()
+    {
+        // animation maybe
+        if(!_alive) return;
+        _alive=false;
+        _rigidbody.freezeRotation = true;
+        _rigidbody.linearVelocity = Vector2.zero;
+        Vector3 p  = transform.position;
+        Instantiate(DeadPlayers[0], p, Quaternion.identity);
+        _spriteRenderer.enabled = false;
+        transform.position = spawnPoint;
+        transform.rotation = Quaternion.identity;
+        Invoke("Respawn", respawnTimer);
+    }
+
+    private void Respawn()
+    {
+        _spriteRenderer.enabled = true;
+        CameraManager.Instance.RemoveCamera();
+        _alive=true;
     }
     
 }

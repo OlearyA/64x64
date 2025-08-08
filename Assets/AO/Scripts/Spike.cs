@@ -9,7 +9,7 @@ public class Spike : MonoBehaviour
       if (other.gameObject.CompareTag("Player"))
       {
          //kill player
-         other.gameObject.gameObject.GetComponent<Player>().Alive = false;
+         other.gameObject.gameObject.GetComponent<Player>().Death();
       }
    }
 }

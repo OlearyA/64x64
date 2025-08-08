@@ -306,9 +306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f3817d2c55cea40b0d6a3bf1fb4938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Alive: 1
   DeadPlayers:
-  - {fileID: 1260834036590042216, guid: 54a2fd848b81afc4c970c87feaee2365, type: 3}
+  - {fileID: 1984176791842706534, guid: 6320b0fe5165b4542a499290b80aefa1, type: 3}
   groundedMoveSpeed: 5
   airMoveSpeed: 0.05
   groundedVelocityCap: 1.5
@@ -320,4 +319,5 @@ MonoBehaviour:
   spawnPoint: {x: 0, y: 0}
   _coyote: 0
   _jumping: 1
+  _alive: 1
   _grounded: 0
