@@ -125,17 +125,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.005252406, y: 0.00000011920929}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.42, y: 0.42}
+    oldSize: {x: 0.875, y: 0.875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.4432461, y: 0.45375085}
+  m_Size: {x: 0.82, y: 0.82}
   m_EdgeRadius: 0
 --- !u!50 &6776814543006103801
 Rigidbody2D:
@@ -316,8 +316,13 @@ MonoBehaviour:
   jumpSpeed: 5
   coyoteTimer: 0.1
   jumpDuration: 0.5
+  respawnTimer: 0
+  castDistance: 0
   spawnPoint: {x: 0, y: 0}
+  boxCastSize: {x: 0, y: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   _coyote: 0
   _jumping: 1
   _alive: 1
-  _grounded: 0
