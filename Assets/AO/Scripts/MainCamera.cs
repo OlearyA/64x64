@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public class MainCamera : MonoBehaviour
+namespace AO.Scripts
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class MainCamera : MonoBehaviour
     {
-       CameraManager.Instance.AddCamera(gameObject); 
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+            CameraManager.Instance.AddCamera(gameObject); 
+        }
     }
 }

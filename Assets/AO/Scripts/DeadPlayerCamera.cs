@@ -1,18 +1,20 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class DeadPlayerCamera : MonoBehaviour
+namespace AO.Scripts
 {
-    [SerializeField] private GameObject cinemaCamera;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class DeadPlayerCamera : MonoBehaviour
     {
-       CameraManager.Instance.AddCamera(gameObject); 
-    }
+        [SerializeField] private GameObject cinemaCamera;
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+            CameraManager.Instance.AddCamera(gameObject); 
+        }
 
-    public void Destroy()
-    {
-        Destroy(cinemaCamera);
-        Destroy(gameObject);
+        public void Destroy()
+        {
+            Destroy(cinemaCamera);
+            Destroy(gameObject);
+        }
     }
 }

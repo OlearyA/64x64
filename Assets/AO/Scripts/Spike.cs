@@ -1,15 +1,16 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Spike : MonoBehaviour
+namespace AO.Scripts
 {
-   private void OnCollisionEnter2D(Collision2D other)
+   public class Spike : MonoBehaviour
    {
-      if (other.gameObject.CompareTag("Player"))
+      private void OnCollisionEnter2D(Collision2D other)
       {
-         //kill player
-         other.gameObject.gameObject.GetComponent<Player>().Death();
+         if (other.gameObject.CompareTag("Player"))
+         {
+            //kill player
+            other.gameObject.gameObject.GetComponent<Player>().Death();
+         }
       }
    }
 }

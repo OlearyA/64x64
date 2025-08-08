@@ -605,7 +605,7 @@ Transform:
   m_GameObject: {fileID: 631820087}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -3.6000001, z: -10}
+  m_LocalPosition: {x: -1.2, y: -3.6000001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -985,7 +985,7 @@ Transform:
   m_GameObject: {fileID: 1112844911}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: -3.6000001, z: -10}
+  m_LocalPosition: {x: -1.2, y: -3.6000001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1576,10 +1576,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.20050976
-    y: 0.02173913
-    width: 0.5981308
-    height: 0.95652175
+    x: 0.21492206
+    y: 0.04278075
+    width: 0.5701559
+    height: 0.91265595
   near clip plane: 0.3
   far clip plane: 20
   field of view: 60
@@ -1616,6 +1616,10 @@ PrefabInstance:
     - target: {fileID: 5080788288744342951, guid: 6c9c9c017d124144fbd662e78227af31, type: 3}
       propertyPath: m_Name
       value: Floor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080788288744342951, guid: 6c9c9c017d124144fbd662e78227af31, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8676987510405353191, guid: 6c9c9c017d124144fbd662e78227af31, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1672,7 +1676,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2898825171376350647, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.4
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 2898825171376350647, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1710,13 +1714,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4768305579497228682, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5003293204986421169, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5003293204986421169, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5450488892201658010, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: m_Size.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5450488892201658010, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5450488892201658010, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5450488892201658010, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211268298558186612, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: _jumping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211268298558186612, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: castDistance
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8211268298558186612, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
       propertyPath: respawnTimer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211268298558186612, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: boxCastSize.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211268298558186612, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: boxCastSize.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211268298558186612, guid: b95fae937fe23c24995bdf89133aac11, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
