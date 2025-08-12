@@ -8,6 +8,18 @@ TextureImporter:
   - first:
       213: -7138140719597701291
     second: Terrain_map2_1
+  - first:
+      213: 8924493130973713660
+    second: Terrain_map2_2
+  - first:
+      213: 7493374392366268701
+    second: Terrain_map2_3
+  - first:
+      213: -6726856358092497380
+    second: Terrain_map2_4
+  - first:
+      213: 7840424825283498572
+    second: Terrain_map2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -186,10 +198,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9e20859a8efcf3045bec9454f86630cb
-      internalID: -2064749773
+      spriteID: cf41a18f73b2adb70800000000000000
+      internalID: 8924493130973713660
       vertices: []
       indices: 
       edges: []
@@ -208,16 +220,104 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 534982f3ec9b85a4aa9b7649d0401ead
-      internalID: -1368850552
+      spriteID: d11000aee40ddf760800000000000000
+      internalID: 7493374392366268701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Terrain_map2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e91d068c765a2a0800000000000000
+      internalID: -6726856358092497380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_map2_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c425d2796d8cecc60800000000000000
+      internalID: 7840424825283498572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_map2_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceabc922166285942857856dffb3a90f
+      internalID: -421743168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_map2_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a7c33b0fee3634d913f5bce2127391
+      internalID: -1287412855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_map2_8
       rect:
         serializedVersion: 2
         x: 0
@@ -232,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49e31bf90e224b04ebed234b8378b75b
-      internalID: -1464231270
+      spriteID: 0d5f2f1ae87bbc448b006d8994adf36d
+      internalID: -1237647249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain_map2_5
+      name: Terrain_map2_9
       rect:
         serializedVersion: 2
         x: 160
@@ -254,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 404e581913166bd4bb95942002e12654
-      internalID: 697486866
+      spriteID: 4cd6c3e03d7b0ed478e8b02bd1e237bb
+      internalID: -1974211119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain_map2_6
+      name: Terrain_map2_10
       rect:
         serializedVersion: 2
         x: 320
@@ -276,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73dc5d82460f8da4dbd4691c4313128b
-      internalID: -115058190
+      spriteID: e4d43b4f61aba0d40924092288d730a7
+      internalID: -1400819272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain_map2_7
+      name: Terrain_map2_11
       rect:
         serializedVersion: 2
         x: 480
@@ -298,8 +398,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28bf3913b7034d341b70a32b16425610
-      internalID: 358580685
+      spriteID: 2a0b5e7b2b81724488e4800bcb69f93e
+      internalID: 1377786204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_map2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53b23e65bd11f24f89355a777765217
+      internalID: -1772536045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_map2_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f341837d725a6ed4dbc68ec357689170
+      internalID: -1153266928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_map2_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a303d8c584f0acf43b4fcc79474e9b7b
+      internalID: 2107496761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_map2_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82cc2a0a5571e640a38b544eb02c29b
+      internalID: -7835578
       vertices: []
       indices: 
       edges: []
@@ -308,7 +496,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 254734eaf2ba8e64e9d46116b6ef9b65
+    spriteID: bf40befe65634264a860f0a30b6cdfdb
     internalID: 0
     vertices: []
     indices: 
@@ -322,12 +510,20 @@ TextureImporter:
     nameFileIdTable:
       Terrain_map2_0: -5728836321039941427
       Terrain_map2_1: -7138140719597701291
-      Terrain_map2_2: -2064749773
-      Terrain_map2_3: -1368850552
-      Terrain_map2_4: -1464231270
-      Terrain_map2_5: 697486866
-      Terrain_map2_6: -115058190
-      Terrain_map2_7: 358580685
+      Terrain_map2_10: -1400819272
+      Terrain_map2_11: 1377786204
+      Terrain_map2_12: -1772536045
+      Terrain_map2_13: -1153266928
+      Terrain_map2_14: 2107496761
+      Terrain_map2_15: -7835578
+      Terrain_map2_2: 8924493130973713660
+      Terrain_map2_3: 7493374392366268701
+      Terrain_map2_4: -6726856358092497380
+      Terrain_map2_5: 7840424825283498572
+      Terrain_map2_6: -421743168
+      Terrain_map2_7: -1287412855
+      Terrain_map2_8: -1237647249
+      Terrain_map2_9: -1974211119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
