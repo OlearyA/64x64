@@ -114,21 +114,6 @@ namespace AO.Scripts
             Gizmos.DrawWireCube(transform.position-transform.up*castDistance,boxCastSize);
         }
         
-/*
-        void OnCollisionEnter2D(Collision2D collision)
-        {
-            if(collision.gameObject.CompareTag("Ground"))
-                _grounded=true;
-        }
-
-        void OnCollisionExit2D(Collision2D collision)
-        {
-            if (!collision.gameObject.CompareTag("Ground")) return;
-            _coyote=true;
-            _grounded=false;
-            StartCoroutine(CoyoteTimer(coyoteTimer));
-        }
-        */
         private IEnumerator CoyoteTimer(float delay)
         {
             yield return new WaitForSeconds(delay);
@@ -166,6 +151,10 @@ namespace AO.Scripts
             CameraManager.Instance.RemoveCamera();
             _alive=true;
         }
-    
+
+        public void CheckPoint(Vector3 point)
+        {
+            spawnPoint=point;
+        }
     }
 }
