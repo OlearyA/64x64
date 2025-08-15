@@ -80,12 +80,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7280293094088611406, guid: 21b99a74179d6954faf77942a9b27cef, type: 3}
+  m_Sprite: {fileID: 5269728377285155030, guid: d4fbc9fd404e1b44ca116e3aec10b6b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.875, y: 0.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -130,12 +130,12 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.875, y: 0.875}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.875, y: 0.875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.82, y: 0.82}
+  m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
 --- !u!50 &6776814543006103801
 Rigidbody2D:
@@ -163,7 +163,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1400007096122058568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,23 +306,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f3817d2c55cea40b0d6a3bf1fb4938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeadPlayers:
-  - {fileID: 1984176791842706534, guid: 6320b0fe5165b4542a499290b80aefa1, type: 3}
-  groundedMoveSpeed: 5
+  deadPlayer: {fileID: 7637235574256768010, guid: 0a9430f3e1e9f204da2845778c3b286e, type: 3}
+  playerSprites:
+  - {fileID: 7726822495548185016, guid: d4fbc9fd404e1b44ca116e3aec10b6b5, type: 3}
+  - {fileID: 5269728377285155030, guid: d4fbc9fd404e1b44ca116e3aec10b6b5, type: 3}
+  - {fileID: 2315843311981570658, guid: d4fbc9fd404e1b44ca116e3aec10b6b5, type: 3}
+  - {fileID: 4183801699546609712, guid: d4fbc9fd404e1b44ca116e3aec10b6b5, type: 3}
+  - {fileID: -7485947624710739766, guid: d4fbc9fd404e1b44ca116e3aec10b6b5, type: 3}
+  - {fileID: 7480060368307913815, guid: d4fbc9fd404e1b44ca116e3aec10b6b5, type: 3}
+  - {fileID: -300811008438620297, guid: d4fbc9fd404e1b44ca116e3aec10b6b5, type: 3}
+  - {fileID: -3500411356858673209, guid: d4fbc9fd404e1b44ca116e3aec10b6b5, type: 3}
+  groundedMoveSpeed: 8
   airMoveSpeed: 0.05
   groundedVelocityCap: 1.5
   airVelocityCap: 2.5
-  intiJumpSpeed: 2.25
+  intiJumpSpeed: 3
   jumpSpeed: 5
   coyoteTimer: 0.1
   jumpDuration: 0.5
-  respawnTimer: 0
-  castDistance: 0
+  respawnTimer: 2
+  castDistance: 0.4
   spawnPoint: {x: 0, y: 0}
-  boxCastSize: {x: 0, y: 0}
+  boxCastSize: {x: 0.85, y: 0.2}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   _coyote: 0
-  _jumping: 1
+  _jumping: 0
   _alive: 1

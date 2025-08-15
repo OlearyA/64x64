@@ -1,12 +1,16 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace AO.Scripts
 {
     public class Player : MonoBehaviour
     {
-        public GameObject[] DeadPlayers;
+        public GameObject deadPlayer;
+        [SerializeField]
+        private Sprite[] playerSprites;
+        private int spriteNumber=1;
         [SerializeField]
         private float groundedMoveSpeed,airMoveSpeed,groundedVelocityCap,airVelocityCap,intiJumpSpeed,jumpSpeed,coyoteTimer,jumpDuration,respawnTimer,castDistance;
         [SerializeField]
@@ -70,6 +74,14 @@ namespace AO.Scripts
         public void UpdateMovement(InputAction.CallbackContext content)
         {
             _movement = content.ReadValue<Vector2>();
+            if (_movement.x < 0)
+            {
+                _spriteRenderer.flipX = true;
+            }
+            else if (_movement.x > 0)
+            {
+                _spriteRenderer.flipX = false;
+            }
         }
 
         public void Jump(InputAction.CallbackContext content)
@@ -102,21 +114,6 @@ namespace AO.Scripts
             Gizmos.DrawWireCube(transform.position-transform.up*castDistance,boxCastSize);
         }
         
-/*
-        void OnCollisionEnter2D(Collision2D collision)
-        {
-            if(collision.gameObject.CompareTag("Ground"))
-                _grounded=true;
-        }
-
-        void OnCollisionExit2D(Collision2D collision)
-        {
-            if (!collision.gameObject.CompareTag("Ground")) return;
-            _coyote=true;
-            _grounded=false;
-            StartCoroutine(CoyoteTimer(coyoteTimer));
-        }
-        */
         private IEnumerator CoyoteTimer(float delay)
         {
             yield return new WaitForSeconds(delay);
@@ -136,19 +133,28 @@ namespace AO.Scripts
             _rigidbody.freezeRotation = true;
             _rigidbody.linearVelocity = Vector2.zero;
             Vector3 p  = transform.position;
-            Instantiate(DeadPlayers[0], p, Quaternion.identity);
+            GameObject t = Instantiate(deadPlayer, p, Quaternion.identity);
+            t.GetComponent<DeadPlayerContainer>().flip=_spriteRenderer.flipX;
+            t.GetComponent<DeadPlayerContainer>().spriteNumber=spriteNumber;
             _spriteRenderer.enabled = false;
             transform.position = spawnPoint;
             transform.rotation = Quaternion.identity;
+            UIManager.Instance.AddDeath();
             Invoke("Respawn", respawnTimer);
         }
 
         private void Respawn()
         {
+            spriteNumber = Random.Range(0, playerSprites.Length);
+            _spriteRenderer.sprite = playerSprites[spriteNumber];
             _spriteRenderer.enabled = true;
             CameraManager.Instance.RemoveCamera();
             _alive=true;
         }
-    
+
+        public void CheckPoint(Vector3 point)
+        {
+            spawnPoint=point;
+        }
     }
 }
