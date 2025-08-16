@@ -17,11 +17,13 @@ namespace AO.Scripts
         private bool _isReloading,_leftFaceing,_playerDetected;
         [SerializeField]
         LayerMask playerMask;
+        private AudioSource _audioSource;
 
         private void Start()
         {
             _spriteRenderer=GetComponent<SpriteRenderer>();
             _leftFaceing=!_spriteRenderer.flipX;
+            _audioSource=GetComponent<AudioSource>();
         }
 
         private void Update()
@@ -48,6 +50,7 @@ namespace AO.Scripts
 
         private void Fire()
         {
+            _audioSource.Play();
             if (_leftFaceing)
             {
                 GameObject t = Instantiate(cannonBall,new Vector3(transform.position.x-cannonBallOffset,transform.position.y,transform.position.z), Quaternion.identity);

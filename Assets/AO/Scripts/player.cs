@@ -23,6 +23,7 @@ namespace AO.Scripts
         private Rigidbody2D _rigidbody;
         private BoxCollider2D _boxCollider2d;
         private SpriteRenderer _spriteRenderer;
+        private AudioSource _audioSource;
         [SerializeField]
         private bool _grounded=> IsGrounded();
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -32,6 +33,7 @@ namespace AO.Scripts
             _boxCollider2d = GetComponent<BoxCollider2D>();
             spawnPoint=transform.position;
             _spriteRenderer=GetComponent<SpriteRenderer>();
+            _audioSource=GetComponent<AudioSource>();
         }
 
         // Update is called once per frame
@@ -128,6 +130,8 @@ namespace AO.Scripts
         public void Death()
         {
             // animation maybe
+            //sound
+            _audioSource.Play();
             if(!_alive) return;
             _alive=false;
             _rigidbody.freezeRotation = true;
