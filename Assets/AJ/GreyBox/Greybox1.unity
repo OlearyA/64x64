@@ -42914,10 +42914,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.21288013
-    y: 0.040114615
-    width: 0.5724508
-    height: 0.91690546
+    x: -0.05
+    y: -0.06666667
+    width: 0.1
+    height: 0.13333334
   near clip plane: 0.3
   far clip plane: 20
   field of view: 60
@@ -56331,7 +56331,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -315236622112933200, guid: 3cc02b82ae11082458774e65072125a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
