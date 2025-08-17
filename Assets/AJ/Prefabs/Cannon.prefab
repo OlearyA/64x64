@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6131538442942639189}
   - component: {fileID: 3378014000207095535}
+  - component: {fileID: 2844139896889110099}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120680355849327124}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.38, y: 5.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -87,3 +88,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2844139896889110099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120680355849327124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22630a072ae77034183c7a558d871a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannonBall: {fileID: 7530516181456393734, guid: c7246527ef5eda44b9c1d7a8946de931, type: 3}
+  cannonBallSpeed: 5
+  reloadTime: 2
+  detectionOffset: 10
+  cannonBallOffset: 1
+  detectionBox: {x: 20, y: 1}
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 64
