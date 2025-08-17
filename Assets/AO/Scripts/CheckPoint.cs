@@ -6,6 +6,7 @@ namespace AO.Scripts
     public class CheckPoint : MonoBehaviour
     {
         private AudioSource _audioSource;
+        private bool _gotten = false;
 
         private void Start()
         {
@@ -16,7 +17,12 @@ namespace AO.Scripts
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                _audioSource.Play();
+                if (!_gotten)
+                {
+                    _audioSource.Play();
+                    _gotten = true;
+                }
+
                 collision.gameObject.GetComponent<Player>().CheckPoint(transform.position);
             }
         }
